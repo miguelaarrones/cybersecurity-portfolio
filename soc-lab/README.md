@@ -12,26 +12,6 @@ A more detailed overview of my objectives is available in [[lab-objectives|lab-o
 The lab architecture I followed is detailed in [[architecture|architecture.md]]
 
 ---
-## Project 01 - Mini SOC
-
-**Status: In progress**
-
-Completed so far:
-- VirtualBox lab
-- Isolated Host-Only network
-- Wazuh installation
-- Wazuh Agent deployment
-- Linux Audit installation
-- File Integrity Monitoring
-- First FIM investigation
-
-Currently working on:
-- SSH attack simulation
-- Authentication investigation
-- Process and command visibility
-- Detection engineering
-
----
 ## Investigations
 
 ### 001 - File Integrity Monitoring
@@ -41,6 +21,11 @@ Tested creation, modification, and deletion of a monitored file using Wazuh FIM.
 ### 002 - SSH Authentication
 
 Investigating repeated SSH authentication failures followed by a successful login.
+
+## Detections
+### 001 - Multiple SSH Failed Attempts + Successful Login
+
+Detecting multiple SSH authentication failures followed by a successful login.
 
 ---
 ## Repository
@@ -74,3 +59,5 @@ The template for the investigations: [[investigation-template|investigation-temp
 
 The template for the timelines: [[timeline-template|timeline-template.md]].
 	* Some timelines might need more fields than the presented for a better understanding.
+
+The template for the detections:  [[detections-template|detections-template.md]]
